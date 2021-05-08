@@ -81,7 +81,7 @@
 } */
 
 //funkcja dodawania elementów tablicy do siebie
-window.onload = function () {
+/* window.onload = function () {
 	
 	var nums = [3, 9, 8];
 	
@@ -90,4 +90,16 @@ window.onload = function () {
 		
 	}
 	addNums(...nums);
+} */
+
+
+// ciąg szablonów
+
+window.onload = function () {
+	
+	function logNinja(name, age) {
+		console.log("my name is " + name + " and my age is " + age);
+	}
+
+	logNinja("Ryu", 22);
 }
