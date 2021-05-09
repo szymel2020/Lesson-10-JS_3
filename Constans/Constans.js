@@ -108,7 +108,10 @@
 	kkk.textContent = 'fdsbdc'
 } */
 
-window.onload = function () {
+
+//oblect
+
+/* window.onload = function () {
 	
 	var name = "Crystal";
 	var belt = "Black";
@@ -121,4 +124,15 @@ window.onload = function () {
 	};
 
 	console.log(ninja.chop(5));
+} */
+
+
+//repeat
+
+window.onload = function () {
+	
+	var str = "graaaavy";
+
+	console.log(str.repeat(5))
+
 }
