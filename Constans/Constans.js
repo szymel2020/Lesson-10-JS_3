@@ -95,11 +95,30 @@
 
 // ciąg szablonów
 
-window.onload = function () {
-	
+// odwrotne znaki (znajdują sie pod 'esc' ), chodzi o to `` pozawalają na pisanie ze znakami 'białymi'
+
+/* window.onload = function () {
+	var kkk = document.querySelector('#kkk');
 	function logNinja(name, age) {
-		console.log("my name is " + name + " and my age is " + age);
+		console.log(`my name is ${name} and my age is ${age}`);
+		
 	}
 
-	logNinja("Ryu", 22);
+	logNinja("Ryu", 32);
+	kkk.textContent = 'fdsbdc'
+} */
+
+window.onload = function () {
+	
+	var name = "Crystal";
+	var belt = "Black";
+
+	var ninja = {
+		name, belt,
+		chop (x) {
+			console.log(`you chopped the enemy ${x} times`);
+		}
+	};
+
+	console.log(ninja.chop(5));
 }
