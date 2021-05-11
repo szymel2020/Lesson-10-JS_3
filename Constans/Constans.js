@@ -144,8 +144,30 @@
 	console.log(str.startsWith("bye", 4));
 } */
 
-window.onload = function () {
+/* window.onload = function () {
 	var str = "goodbye";
 
 	console.log(str.endsWith("good", str.length - 3));
+} */
+
+
+//praktyczne zastosowanie "startsWith" i "if"
+/* window.onload = function () {
+	
+	var youSay = "goodbye";
+
+	if (youSay.startsWith("goodbye")) {
+		var iSay = "hello";
+	}
+
+	console.log(`you say ${youSay}, I say ${iSay}`);
+} */
+
+
+//sprawdzamy czy wartość zmiennej zawiera określony tekst
+window.onload = function () {
+
+	var test = "My name is Ryu";
+
+	console.log(test.includes("name"));
 }
