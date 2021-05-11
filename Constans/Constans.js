@@ -129,10 +129,16 @@
 
 //repeat
 
-window.onload = function () {
+/* window.onload = function () {
 	
 	var str = "graaaavy";
-
+	// ilość w nawiasie poniżej, określa ilość powtórzeń
 	console.log(str.repeat(5))
 
+} */
+
+window.onload = function () {
+	var str = "goodbye";
+	//sprawdzamy czy na czwartym miejscu indexu w wartości zmiennej "str" znajduje się "bye"
+	console.log(str.startsWith("bye", 4));
 }
