@@ -137,8 +137,15 @@
 
 } */
 
-window.onload = function () {
+//startsWith
+/* window.onload = function () {
 	var str = "goodbye";
 	//sprawdzamy czy na czwartym miejscu indexu w wartości zmiennej "str" znajduje się "bye"
 	console.log(str.startsWith("bye", 4));
+} */
+
+window.onload = function () {
+	var str = "goodbye";
+
+	console.log(str.endsWith("good", str.length - 3));
 }
