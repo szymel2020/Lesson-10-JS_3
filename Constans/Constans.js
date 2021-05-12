@@ -165,9 +165,21 @@
 
 
 //sprawdzamy czy wartość zmiennej zawiera określony tekst
-window.onload = function () {
+/* window.onload = function () {
 
 	var test = "My name is Ryu";
 
 	console.log(test.includes("name"));
+} */
+
+// Arrow functions
+
+window.onload = function () {
+
+  // funkcja strzałkowa
+  // poniżej 'name' jest parametrem funkcji strzałkowej , jeśli jest jeden parametr to nawiasy są niepotrzebne
+	
+  var ninjaGreeting = name => console.log(`${name} says fdddddssd`);
+
+  ninjaGreeting("Mark");
 }
