@@ -174,7 +174,7 @@
 
 // Arrow functions
 
-window.onload = function () {
+/* window.onload = function () {
 
   // funkcja strzałkowa
   // poniżej 'name' jest parametrem funkcji strzałkowej , jeśli jest jeden parametr to nawiasy są niepotrzebne
@@ -182,4 +182,25 @@ window.onload = function () {
   var ninjaGreeting = name => console.log(`${name} says fdddddssd`);
 
   ninjaGreeting("Mark");
+} */
+
+
+//urzycie funkcji strzałkowej
+window.onload = function () {
+
+	var ninja = {
+		name: "Ryu",
+		chop(x) {
+			
+			window.setInterval(() => {
+				if (x > 0) {
+					console.log(this.name + " chopped the enemy");
+					x--;
+			}	
+			}, 1000);
+		}
+	};
+
+
+	ninja.chop(5);
 }
