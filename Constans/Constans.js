@@ -186,7 +186,7 @@
 
 
 //urzycie funkcji strzałkowej
-window.onload = function () {
+/* window.onload = function () {
 
 	var ninja = {
 		name: "Ryu",
@@ -203,4 +203,17 @@ window.onload = function () {
 
 
 	ninja.chop(5);
+} */
+
+//sets
+
+window.onload = function () {
+	
+	var names = new Set();
+
+	names.add("Shaun").add("Ryu").add("Crystal");
+	names.delete("Crystal");
+	console.log(names.has("Crystal"));
+	console.log(names.size);
+	console.log(names);
 }
