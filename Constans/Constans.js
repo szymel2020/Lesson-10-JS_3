@@ -207,7 +207,7 @@
 
 //sets
 
-window.onload = function () {
+/* window.onload = function () {
 	
 	var names = new Set();
 
@@ -216,4 +216,17 @@ window.onload = function () {
 	console.log(names.has("Crystal"));
 	console.log(names.size);
 	console.log(names);
+} */
+
+window.onload = function () {
+	// jak pozbyć sie duplikatów w tablicy
+	var ninjas = ["shaun", "crystal", "yoshi", "ryu", "yoshi", "ryu"]
+
+	var refinedNinjas = new Set(ninjas);
+
+	console.log(refinedNinjas);
+
+	ninjas = [...refinedNinjas];
+
+	console.log(ninjas);
 }
