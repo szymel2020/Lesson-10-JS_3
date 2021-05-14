@@ -218,7 +218,7 @@
 	console.log(names);
 } */
 
-window.onload = function () {
+/* window.onload = function () {
 	// jak pozbyć sie duplikatów w tablicy
 	var ninjas = ["shaun", "crystal", "yoshi", "ryu", "yoshi", "ryu"]
 
@@ -229,4 +229,20 @@ window.onload = function () {
 	ninjas = [...refinedNinjas];
 
 	console.log(ninjas);
+} */
+
+// Generators
+window.onload = function () {
+	
+	function* gen() {
+		var x = yield "pear";
+		var y = yield "banana";
+		var z = yield "apple";
+		return x + y + z;
+	}
+
+	var myGen = gen();
+	console.log(myGen.next(10));
+	console.log(myGen.next(4));
+	console.log(myGen.next(7));
 }
